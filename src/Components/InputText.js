@@ -2,27 +2,27 @@ import React, { useState } from 'react';
 import InputMenu from './InputMenu';
 import $ from 'jquery';
 import ReactDOM from 'react-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { resetState, followInput, followh1 } from '../Redux/InputText/InputSlice';
 
 const InputText = () => {
-  const [input, setInput] = useState({
-    content: '',
-    h1: false,
-    h1Text: '',
-  });
+  const dispatch = useDispatch()
+
+  const input = useSelector((state) =>  state.inputText)
 
   const addNewH1 = () => {
     const preview  = ReactDOM.findDOMNode(document.querySelector('#htmlPreview'));
     const h1 = ReactDOM.findDOMNode(document.createElement('h1'));
     h1.innerHTML = `${input.h1Text}`;
     preview.appendChild(h1);
-    setInput({...input, content:'', h1Text: ''})
+    dispatch(resetState())
   }
   const addNewText = () => {
     const preview  = ReactDOM.findDOMNode(document.querySelector('#htmlPreview'));
     const paragraph = ReactDOM.findDOMNode(document.createElement('p'));
     paragraph.textContent = `${input.content}`
     preview.appendChild(paragraph)
-    setInput({...input, content:'', h1Text: ''})
+    dispatch(resetState())
   }
   const changeToText = () => {
     const inputh1 = ReactDOM.findDOMNode(document.querySelector('#inputh1'))
@@ -33,7 +33,7 @@ const InputText = () => {
    $(inputh1).css({
       display: 'none',
     })
-    setInput({...input, content:'', h1Text: ''})
+    dispatch(resetState())
   }
 
   return (
@@ -45,9 +45,8 @@ const InputText = () => {
         type="text" 
         placeholder="Type / for blocks, @ to link docs" 
         onChange={
-          (e) => {setInput({
-            ...input,
-            content: e.target.value});
+          (e) => {
+            dispatch(followInput(e.target.value)); 
         }}
       />
       <button 
@@ -65,12 +64,9 @@ const InputText = () => {
         type="text" 
         placeholder="HEADING 1" 
         onChange={
-          (e) => {setInput({
-            ...input,
-            content: e.target.value,
-            h1Text: e.target.value.replace('/1', '')
-          });
-        }} 
+          (e) => {
+            dispatch(followh1(e.target.value)); 
+          }} 
         onKeyDown={
           (e) => e.key === 'Escape' ? changeToText() : null
         }
@@ -86,7 +82,7 @@ const InputText = () => {
         }}
         ></button>
       </form>
-      <InputMenu input={input} setInput={setInput}/>
+      <InputMenu input={input} />
     </div>
     
   )

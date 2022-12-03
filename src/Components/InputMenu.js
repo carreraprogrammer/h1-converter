@@ -1,8 +1,6 @@
 import { RxText } from 'react-icons/rx';
-import $, { nodeName } from 'jquery';
+import $ from 'jquery';
 import ReactDOM from 'react-dom';
-import { useEffect } from 'react';
-
 const InputMenu = (props) => {
    
     const input = props.input;
@@ -24,7 +22,6 @@ const InputMenu = (props) => {
     }
 
     const handleMenu = () => {
-      const button = ReactDOM.findDOMNode(document.querySelector('#autoFocus'))
       return input.content === '/1' ? {display: 'block'} : {display: 'none'}
     }
 
