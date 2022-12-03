@@ -43,9 +43,5 @@
   },
   "devDependencies": {
     "@testing-library/react": "^13.4.0"
-  },
-  "engines": {
-    "node": "v16.17.0",
-    "npm": "8.18.0"
   }
 }
