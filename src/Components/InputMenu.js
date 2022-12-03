@@ -22,7 +22,7 @@ const InputMenu = (props) => {
     }
 
     const handleMenu = () => {
-      return input.content === '/1' ? {display: 'block'} : {display: 'none'}
+      return input.content === '/' ? {display: 'block'} : {display: 'none'}
     }
 
     const openh1Input = () => {
