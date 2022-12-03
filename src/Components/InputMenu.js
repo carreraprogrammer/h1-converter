@@ -1,29 +1,38 @@
 import { RxText } from 'react-icons/rx';
-import $ from 'jquery';
+import $, { nodeName } from 'jquery';
 import ReactDOM from 'react-dom';
+import { useEffect } from 'react';
 
 const InputMenu = (props) => {
-    const openMenu = props.openMenu;
+   
+    const input = props.input;
 
     const testButton = () => {
-      console.log('The button works')
+      console.log('the button is clicked')
+      const inputh1 = ReactDOM.findDOMNode(document.querySelector('#inputh1'))
+      const inputText = ReactDOM.findDOMNode(document.querySelector('#inputText'))
+      const menu = ReactDOM.findDOMNode(document.querySelector('#h1Menu'))
+      $(menu).css({
+        display: 'none',
+      })
+      $(inputText).css({
+        display: 'none',
+      })
+     $(inputh1).css({
+        display: 'block',
+      }).focus().select()
     }
 
     const handleMenu = () => {
-      return openMenu === '/1' ? {display: 'block'} : {display: 'none'}
+      const button = ReactDOM.findDOMNode(document.querySelector('#autoFocus'))
+      return input.content === '/1' ? {display: 'block'} : {display: 'none'}
     }
 
     const openh1Input = () => {
-        const button = ReactDOM.findDOMNode(document.querySelector('#inputText'))
+        const button = ReactDOM.findDOMNode(document.querySelector('#autoFocus'))
         const regex = new RegExp('^/1.');
-
-        if(regex.test(openMenu)){
-           $(button).css({
-              fontSize: '30px',
-              fontWeight: 'bold',
-              height: '50px'
-            })
-           props.setInput(openMenu.replace('/1', ''))
+        if(regex.test(input.content)){
+           $(button).click()        
         }
     }
 
@@ -36,7 +45,7 @@ const InputMenu = (props) => {
         <p>Keep typing to filter, or escape to exit</p>
         <p id="filteringKeyword">Filtering keyword</p>
         <div id="h1Options" >
-          <button type="button" href="../" className="optionh1" onClick={testButton} id="autoFocus">
+          <button type="button" href="../" className="optionh1" onClick={testButton} id="autoFocus" autoFocus>
             <RxText style={{
               width: '15%',
               height: '30px',

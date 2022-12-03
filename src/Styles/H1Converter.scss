@@ -42,7 +42,7 @@
     color: gray;
     display: flex;
     justify-content: space-between;
-    margin: 3% 0;
+    margin: 3% 0 1% 0;
     #leftStatusSide {
       display: flex;
       .statusPartContainer {
@@ -94,44 +94,52 @@
 
 /* INPUT STYLES */
 
-#inputTextContainer {
-  width: 60%;
-  margin-top: 5%;
-  #inputText {
-    border: none;
-    outline: none;
-    height: 24px;
-    width: 100%;
-    font-size: 1rem;
-  }
-  #h1Menu {
-    border: 1px solid rgb(172, 171, 171);
-    width: 30%;
-    height: 20rem;
-    font-size: 14px;
-    margin-top: 14px;
-    -webkit-box-shadow: 1px 32px 41px -11px rgba(181,181,181,1);
-    -moz-box-shadow: 1px 32px 41px -11px rgba(181,181,181,1);
-    box-shadow: 1px 32px 41px -11px rgba(181,181,181,1);
-    h3{
-      margin-left: 10px;
-      margin-top: 10px;
+  #inputsContainer {
+    width: 60%;
+    margin-top: 2%;
+    #inputText {
+      border: none;
+      outline: none;
+      height: 24px;
+      width: 100%;
+      font-size: 1rem;
     }
-    p {
+    #inputh1 {
+      width: 100%;
+      font-size: 1.5rem;
+      outline: none;
+      border: none;
+      display: none;
+      margin-top: -1%;
+    }
+    #h1Menu {
+      border: 1px solid rgb(172, 171, 171);
+      width: 30%;
+      height: 20rem;
       font-size: 14px;
-      color: rgb(172, 171, 171);
-      font-style: italic;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      margin-left: 10px;
-    }
-    #filteringKeyword {
-      font-style: normal;
-      font-size: 14px;
-      color: black;
-      margin-top: 10px;
-
-    }
+      margin-top: 14px;
+      -webkit-box-shadow: 1px 32px 41px -11px rgba(181,181,181,1);
+      -moz-box-shadow: 1px 32px 41px -11px rgba(181,181,181,1);
+      box-shadow: 1px 32px 41px -11px rgba(181,181,181,1);
+      h3{
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 14px;
+        color: rgb(172, 171, 171);
+        font-style: italic;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+      }
+      #filteringKeyword {
+        font-style: normal;
+        font-size: 14px;
+        color: black;
+        margin-top: 10px;
+  
+      }
     .optionh1 {
       display: flex;
       width: 100%;
@@ -149,6 +157,10 @@
       background-color: rgba(128, 128, 128, 0.234);
       outline: none;  
     }
+    .optionh1:active{
+      background-color: rgba(128, 128, 128, 0.234);
+      outline: none;  
+    }
    
   }
 }
@@ -160,4 +172,19 @@
 #submitBtn {
   border: none;
   color: transparent;
+}
+
+/* HTML PREVIEW */
+
+#htmlPreview {
+  width: 60%;
+  margin-top: 3%;
+  gap: 10px;
+  h1 {
+    line-height: 4rem;
+    font-size: 1.5rem;
+  }
+  p {
+    line-height: 1.5rem;
+  }
 }
