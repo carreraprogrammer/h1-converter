@@ -1,4 +1,5 @@
 
+import '../Styles/H1Converter.scss'
 import HtmlText from "../Components/HtmlText";
 import InputText from "../Components/InputText";
 import StatusBar from "../Components/StatusBar";
@@ -6,7 +7,7 @@ import StatusBar from "../Components/StatusBar";
 
 const H1Converter = () => {
  return ( 
- <div clasName="pageContainer">
+ <div className="pageContainer">
     <StatusBar />
     <HtmlText />
     <InputText />

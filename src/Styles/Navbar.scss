@@ -1,0 +1,33 @@
+#navbar {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  color: gray;
+  #navigation {
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    #arrowRight {
+      padding: 5px;
+      font-size: 10px;
+    }
+    a {
+      color: gray;
+    }
+  }
+  #editing {
+    flex-basis: 10%;
+    text-align: center;
+    cursor: pointer;
+  }
+  #publishSpace {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    color: rgb(2, 2, 135);
+    font-weight: bold;
+  }
+}
