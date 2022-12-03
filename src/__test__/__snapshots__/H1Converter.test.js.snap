@@ -1,0 +1,352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions renders correctly 1`] = `
+<div
+  className="pageContainer"
+>
+  <div
+    id="statusBar"
+  >
+    <div
+      id="leftStatusSide"
+    >
+      <p
+        className="statusPartContainer"
+      >
+         
+        <span
+          id="greenP"
+        >
+           P 
+        </span>
+         
+        <span
+          className="divisorStatus"
+        >
+          |
+        </span>
+      </p>
+      <div
+        className="statusPartContainer"
+      >
+        <div
+          id="time"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+                "marginRight": "5px",
+                "marginTop": "5px",
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+            />
+            <path
+              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+            />
+          </svg>
+           
+        </div>
+        0 min 
+        <span
+          className="divisorStatus"
+        >
+          |
+        </span>
+      </div>
+      <div
+        className="statusPartContainer"
+      >
+        <img
+          alt="bunny"
+          height="30px"
+          src="bunny.png"
+        />
+        <span
+          className="divisorStatus"
+        >
+          |
+        </span>
+      </div>
+      <div
+        className="statusPartContainer"
+      >
+        <p
+          id="statusSave"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            style={
+              Object {
+                "color": undefined,
+                "marginRight": "5px",
+                "marginTop": "5px",
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="17"
+              x2="7"
+              y1="7"
+              y2="17"
+            />
+            <polyline
+              points="17 17 7 17 7 7"
+            />
+          </svg>
+        </p>
+        0
+      </div>
+    </div>
+    <div
+      id="rightStatusSide"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
+        />
+        <path
+          d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
+        />
+      </svg>
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": "green",
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs />
+        <g
+          id="Cloud"
+        >
+          <path
+            d="M17.1,19.4H9.646a7.492,7.492,0,0,1-7.588-7.046h0A7.4,7.4,0,0,1,9.452,4.6a7.434,7.434,0,0,1,7.136,5.447,4.731,4.731,0,0,1,4.092,1.441,4.664,4.664,0,0,1,1.26,3.529A4.789,4.789,0,0,1,17.1,19.4ZM3.057,12.309A6.493,6.493,0,0,0,9.646,18.4H17.1a3.787,3.787,0,0,0,3.839-3.453,3.7,3.7,0,0,0-4.5-3.86l-.2.046-.269-.127a.617.617,0,0,1-.273-.392A6.422,6.422,0,0,0,9.452,5.6a6.4,6.4,0,0,0-6.395,6.711Z"
+          />
+        </g>
+      </svg>
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": "black",
+          }
+        }
+        viewBox="0 0 20 20"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"
+        />
+      </svg>
+    </div>
+  </div>
+  <h1
+    id="pageTitle"
+  >
+    Front-end developer test project
+  </h1>
+  <p
+    id="pageDescription"
+  >
+    Your goal is to make a page that looks exactly like this one, and has the ability to create H1 text simply by typing / then 1, then typing text, and hitting enter
+  </p>
+  <div
+    id="htmlPreview"
+  />
+  <div
+    id="inputsContainer"
+  >
+    <form
+      id="inputTextContainer"
+    >
+      <input
+        id="inputText"
+        onChange={[Function]}
+        placeholder="Type / for blocks, @ to link docs"
+        type="text"
+        value=""
+      />
+      <button
+        id="submitBtn"
+        onClick={[Function]}
+        type="submit"
+      />
+    </form>
+    <form
+      id="inputh1Container"
+    >
+      <input
+        id="inputh1"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="HEADING 1"
+        type="text"
+        value=""
+      />
+      <button
+        id="submitBtn"
+        onClick={[Function]}
+        type="submit"
+      />
+    </form>
+    <div
+      id="h1Menu"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <h3>
+        Add blocks
+      </h3>
+      <p>
+        Keep typing to filter, or escape to exit
+      </p>
+      <p
+        id="filteringKeyword"
+      >
+        Filtering keyword
+      </p>
+      <div
+        id="h1Options"
+      >
+        <button
+          autoFocus={true}
+          className="optionh1"
+          href="../"
+          id="autoFocus"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "alignItems": "center",
+                "color": "gray",
+                "display": "flex",
+                "height": "30px",
+                "justifyContent": "center",
+                "marginLeft": "10px",
+                "width": "15%",
+              }
+            }
+            viewBox="0 0 15 15"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clipRule="evenodd"
+              d="M3.94993 2.95002L3.94993 4.49998C3.94993 4.74851 3.74845 4.94998 3.49993 4.94998C3.2514 4.94998 3.04993 4.74851 3.04993 4.49998V2.50004C3.04993 2.45246 3.05731 2.40661 3.07099 2.36357C3.12878 2.18175 3.29897 2.05002 3.49993 2.05002H11.4999C11.6553 2.05002 11.7922 2.12872 11.8731 2.24842C11.9216 2.32024 11.9499 2.40682 11.9499 2.50002L11.9499 2.50004V4.49998C11.9499 4.74851 11.7485 4.94998 11.4999 4.94998C11.2514 4.94998 11.0499 4.74851 11.0499 4.49998V2.95002H8.04993V12.05H9.25428C9.50281 12.05 9.70428 12.2515 9.70428 12.5C9.70428 12.7486 9.50281 12.95 9.25428 12.95H5.75428C5.50575 12.95 5.30428 12.7486 5.30428 12.5C5.30428 12.2515 5.50575 12.05 5.75428 12.05H6.94993V2.95002H3.94993Z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+          <div
+            id="optionDescription"
+          >
+            <h3>
+              Heading 1
+            </h3>
+            <p>
+              Shortcut: type # + space
+            </p>
+          </div>
+        </button>
+        <button
+          className="optionh1"
+          href="./"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "alignItems": "center",
+                "color": "gray",
+                "display": "flex",
+                "height": "30px",
+                "justifyContent": "center",
+                "marginLeft": "10px",
+                "width": "15%",
+              }
+            }
+            viewBox="0 0 15 15"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clipRule="evenodd"
+              d="M3.94993 2.95002L3.94993 4.49998C3.94993 4.74851 3.74845 4.94998 3.49993 4.94998C3.2514 4.94998 3.04993 4.74851 3.04993 4.49998V2.50004C3.04993 2.45246 3.05731 2.40661 3.07099 2.36357C3.12878 2.18175 3.29897 2.05002 3.49993 2.05002H11.4999C11.6553 2.05002 11.7922 2.12872 11.8731 2.24842C11.9216 2.32024 11.9499 2.40682 11.9499 2.50002L11.9499 2.50004V4.49998C11.9499 4.74851 11.7485 4.94998 11.4999 4.94998C11.2514 4.94998 11.0499 4.74851 11.0499 4.49998V2.95002H8.04993V12.05H9.25428C9.50281 12.05 9.70428 12.2515 9.70428 12.5C9.70428 12.7486 9.50281 12.95 9.25428 12.95H5.75428C5.50575 12.95 5.30428 12.7486 5.30428 12.5C5.30428 12.2515 5.50575 12.05 5.75428 12.05H6.94993V2.95002H3.94993Z"
+              fill="currentColor"
+              fillRule="evenodd"
+            />
+          </svg>
+          <div
+            id="optionDescription"
+          >
+            <h3>
+              Expandable Heading 1
+            </h3>
+            <p>
+              Shortcut: type 
+              &gt;
+              &gt;
+               # + space
+            </p>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

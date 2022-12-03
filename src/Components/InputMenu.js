@@ -27,7 +27,7 @@ const InputMenu = (props) => {
 
     const openh1Input = () => {
         const button = ReactDOM.findDOMNode(document.querySelector('#autoFocus'))
-        const regex = new RegExp('^/1.');
+        const regex = new RegExp('^/1');
         if(regex.test(input.content)){
            $(button).click()        
         }
