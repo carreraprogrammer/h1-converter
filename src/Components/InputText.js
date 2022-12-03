@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import InputMenu from './InputMenu';
 import $ from 'jquery';
 import ReactDOM from 'react-dom';
