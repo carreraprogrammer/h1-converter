@@ -17,5 +17,70 @@
   .pageContainer {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
+
+/* STATUS BAR STYLES */
+  
+
+  @mixin center-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #statusBar {
+    width: 60%;
+    height: 2.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0;
+    #leftStatusSide {
+      display: flex;
+      .statusPartContainer {
+        @include center-element;
+        height: 100%;
+        #greenP {
+          height: 80%;
+          width: 90%;
+          padding: 0px 10px;
+          background-color: rgba(0, 128, 17, 0.353);
+          color: green;
+          border-radius: 5px;
+          @include center-element;
+          margin-left: 5px;
+        }
+      }
+      .divisorStatus {
+        font-weight: bolder;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 12px;
+      }
+    }
+    #rightStatusSide {
+        @include center-element;
+        height: 100%;
+        width: 7%;
+        font-size: 1.2rem;
+        justify-content: space-between;
+        margin-right: 10px;
+      }
+  }
+
+  #pageTitle {
+    width: 60%;
+    font-size: 2.5rem;
+  }
+
+  #pageDescription {
+    width: 60%;
+    font-size: 1rem;
+  }
+/* STATUS BAR STYLES */

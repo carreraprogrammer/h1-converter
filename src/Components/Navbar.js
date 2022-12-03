@@ -9,8 +9,8 @@ const Navbar =() => {
     return (
     <nav id="navbar">
       <div id="navigation">
-        <RxDoubleArrowRight style={{margin: '0px 10px'}} />
-        <BiBookOpen style={{marginRight: '5px'}} />
+        <RxDoubleArrowRight style={{margin: '0px 10px', marginTop: '2px'}} />
+        <BiBookOpen style={{marginRight: '5px', marginTop: '2px'}} />
         <NavLink to="/"  style={{marginRight: '10px'}}>Main</NavLink>/ Gettin started / Front end test project
       </div>
       <div id="editing">
