@@ -1,6 +1,8 @@
 const HtmlText = () => {
     return (
-      <h1></h1>
+      <div id='htmlPreview'>
+        <h1 id="htmlText"></h1>
+      </div>
     )
 }
 
